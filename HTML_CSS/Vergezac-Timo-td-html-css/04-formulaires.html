@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Les formulaire en HTML</h1>
+    <fieldset>
+        <legend>Inscription formation</legend>
+        <form action="#" method="post">
+            <!-- form permet de metre plusieur éléments dans un rectangle -->
+            <h2>Identité</h2>
+            <label for="Nom"> Nom : <input type="text" name="Nom" id="Nom" minlength="3" required
+                    placeholder="DUPONT" /></label>
+            <!-- input permet à l'utilisateur d'entré un valeur, il y'a plusieur type d'entré, ici type="text" defini une entré textuel-->
+            <br>
+            <label for="Prénom"> Prénom : <input type="text" name="Préom" id="Prénom" minlength="3" required placeholder="Eric" /></label>
+            <br>
+            <label for="Date_de_naissance"> Date de naissance : <input type="date" id="Date_de_naissance" name="Date_de_naissance" minlength="1" required /></label>
+            <!-- ici, type="date" permet d'entré une date -->
+            <br>
+
+            <label for="Mail"> E-mail : <input type="email" name="Mail" id="Mail" placeholder="monemail@adresse.com" minlength="3" required /></label>
+            <br>
+            <label for="MDP"> Entrer un mot de passe (6 caractères minimum): <input type="password" name="MDP" id="MDP" minlength="6"
+                    required /></label>
+            <br>
+            <label for="diplome">Dernier diplôme obtenu :</label>
+            <select name="diplome" id="diplome" required>
+                <option value="">--Séléctionner un diplôme--</option>
+                <option value="Brevet">Brevet</option>
+                <option value="BacGeneral">Bac Général</option>
+                <option value="BacTechnologique">Bac technologique</option>
+                <option value="BacPro">Bac Professionnel</option>
+                <option value="Cap">CAP</option>
+                <option value="But">BUT</option>
+            </select>
+            <br>
+            <label for="FormationSouhaitee"> Formation souhaitée : <input type="text" name="FormationSouhaitee" id="FormationSouhaitee" minlength="3" required /></label>
+            <!-- select permet d'afficher un choix via un liste déroulante où option permet de definir les options -->
+            <br>
+            <h2>Motivation</h2>
+            <br>
+            Expliquez pourquoi vous voulez rejoindre a formation selectionnée :
+            <br>
+            <textarea name="motivation" id="motivation" cols="100" rows="10" placeholder="Vos motivation" minlength="3"
+                required></textarea>
+            <!-- textarea est similaire à une input text, mais le cadre de réponsse est bien plus large -->
+            <br>
+            <input type="submit" value="Envoyer" />
+        </form>
+    </fieldset>
+    <br>
+    <p>Timo V. ©</p>
+</body>
+
+</html>

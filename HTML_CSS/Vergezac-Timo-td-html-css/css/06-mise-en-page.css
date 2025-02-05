@@ -1,0 +1,65 @@
+table {
+    table-layout: fixed;
+    width: 60%;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    text-align: center;
+}
+/* pour les tableau; fixe, largeur de 60% de la page, bourdure collapse, bordure de 1pixel grise, text aligner au centre */
+
+thead,
+tfoot {
+    background-color: rgb(28, 145, 199);
+    color: white;
+}
+/* pour les 1ere et dernierre ligne des tableau; Couleure d'arriere plan cyan, couleur du texte blanche */
+
+tbody {
+    background-color: rgba(179, 204, 236, 0.63);
+}
+/* pour les colonnes du milieu (body) des tableaux; couleurs d'arrier plan bleu grisatre */
+
+tbody td:hover {
+    background-color: green;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 3px;
+    max-width: 300px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bleu,
+span:nth-of-type(2),
+span:nth-of-type(4) {
+    background-color: blue;
+    color: white;
+}
+
+span {
+    margin: 20px;
+}
+
+span:nth-of-type(1),
+span:nth-of-type(6) {
+    background-color: green;
+}
+
+span:nth-of-type(5) {
+    background-color: orange;
+}

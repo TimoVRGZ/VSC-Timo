@@ -1,0 +1,110 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Centrage du contenu principal */
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    position: relative;
+}
+
+/* Logo de loupe dans le coin en haut à gauche */
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007BFF; /* Fond bleu */
+    border-radius: 50%; /* Cercle */
+    padding: 10px;
+}
+
+#logo img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* Icône blanche */
+}
+
+/* Input de texte */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+    text-transform: uppercase; /* Forcer la saisie en majuscule */
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+/* Bouton Valider */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Section des résultats */
+#Resultat {
+    margin-top: 20px;
+    opacity: 0; /* Commence invisible */
+    transform: translateY(-20px); /* Départ décalé vers le haut */
+    transition: opacity 1s ease, transform 1s ease; /* Transition fluide */
+}
+
+#Resultat.show {
+    opacity: 1; /* Devient visible */
+    transform: translateY(0); /* Retour à la position normale */
+}
+
+#separateur {
+    border: none; /* Enlève la bordure par défaut */
+    border-top: 3px solid #007BFF; /* Trait bleu de 3px */
+    margin: 10px 0; /* Espacement au-dessus et en-dessous du trait */
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style des résultats */
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Espacement entre les paragraphes */
+#resultat_mot_saisi,
+#resultat_mot_revers,
+#resultat_palindrome {
+    margin-bottom: 10px;
+}

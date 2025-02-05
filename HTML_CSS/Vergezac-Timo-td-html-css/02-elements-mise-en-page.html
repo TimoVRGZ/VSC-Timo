@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- pour definir la langue de ma page en français (en pour anglais, fr pour français...) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de mise en page</title>
+    <!-- titre -->
+</head>
+<body>
+    <header><h1>Les éléments de mise en page en HTML</h1></header> 
+    <main>
+        <h2>Je suis le h2</h2>
+        <!-- h2 est un sous-titre -->
+        <p>Je suis un paragraphe : Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam odio eius, ipsa similique perferendis ipsam eos ratione consequatur reprehenderit? illum vero amet nemo molestiar qui?</p>
+        <!-- p est un paragraphe -->
+        <h2>Je suis le h2 de la div</h2>
+        <p>Je suis le paragraphe 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam odio eius, ipsa similique perferendis ipsam eos ratione consequatur reprehenderit? illum vero amet nemo molestiar qui?</p>
+        <p>Je suis le paragraphe 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam odio eius, ipsa similique perferendis ipsam eos ratione consequatur reprehenderit? illum vero amet nemo molestiar qui?</p>
+        <p>Je suis le paragraphe 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam odio eius, ipsa similique perferendis ipsam eos ratione consequatur reprehenderit? illum vero amet nemo molestiar qui?</p>
+        <h2>Les images</h2>
+        <h3>Image du serveur</h3>
+        <!-- h3 est un sous-sous-titre -->
+        <figure>
+        <img src="./img/GohanSSJ2.png" alt="Gohan en SSJ2 face à Bojack" width="500"> <p>Gohan en SSJ2 face à Bojack</p>
+        </figure>
+        <!-- figure permet de mettre des elements ensemble avec un espace avec la marge -->
+        <h3>Image en ligne</h3>
+        <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/1280px-Naruto_logo.svg.png" alt="Le logo de Naruto" width="500"> <p>Logo Naruto</p>
+        <!-- img permet d'integrer une image, src definie la source, alt definie une description de l'image (si l'image ne s'affiche plus, alt sera afficher à la place), hight et width definissent la hauteur et la largeur -->
+        </figure>
+        <h2>Les vidéos</h2>
+        <h3>Vidéos du serveur</h3>
+        <div>
+        <video src="./videos/Galaxie.mp4" width="500"></video>
+        <!-- video permet d'aficher un video (même parametrage que pour "img") -->
+        </div>
+        <h3>Vidéos récupérées sur YouTube</h3>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GhmFF4nGKSg?si=llU75YBKvJxym8HV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- iframe permet d'integrer par exemple une vidéo Youtube -->
+        </div> 
+        <h2>Exemple de mis ene forme de texte</h2>
+        <p><b>Je suis un paragraphe stylisé</b> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore blanditiis obcaecati quis.</p>
+        <!-- b permet  de metre un text en gras -->
+        <p><i>Laborum aliquam odio eius</i>, ipsa similique perferendis ipsam eos ratione consequatur reprehenderit!</p>
+        <!-- i permet de metre un text en Italique -->
+        <mark>Illum vero amet nemo molestiae qui?</mark>
+        <!-- mark permet de surligner un text -->
+        <h2>Les listes</h2>
+        <h3>Les listes non-ordonnées (Unordoned List)</h3>
+        <ul>
+            <li>Element 01</li>
+            <li>Element 02</li>
+            <li>Element 03</li>
+        </ul>
+        <!-- ul est une liste non-ordonnées et li est un ellement de ette liste -->
+        <h3>Les listes ordonnées (Ordered List)</h3>
+        <ol>
+            <li>Element 01</li>
+            <li>Element 02</li>
+            <li>Element 03</li>
+        </ol>
+        <!-- ol est une listes ordonnées -->
+        <h3>Les listes descriptives (Descriptive List)</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Langage de balisage utilisé pour la création de page web, permettant notamment de définir des liens hypertextes.</dd>
+            <dt>CSS</dt>
+            <dd>Le CSS (Cascading Style Sheets) est un langage informatique utilisé sur l'internet pour mettre en forme le texte contenu sur les pages HTML.</dd>
+        </dl>
+        <!-- dl est une listes descriptive, dt est un element de cette liste, et dd est une description du terme précedant -->
+        <p>Timo V.©</p>
+    </main>
+    <footer></footer>
+</body>
+</html>

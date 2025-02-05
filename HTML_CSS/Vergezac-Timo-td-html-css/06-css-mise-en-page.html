@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/06-mise-en-page.css">
+    <title>Mis en pahe CSS</title>
+</head>
+
+<body>
+    <h1>L'apparence visuelle en CSS</h1>
+    <center>
+        <figure>
+            <img src="img/GohanSSJ2.png" alt="Gohan en SSJ2 face à Bojack">
+            <figcaption>Gohan en SSJ2 face à Bojack</figcaption>
+            <!-- Figcapation est une legende des élément de l'élément parent (ici figure). -->
+        </figure>
+    </center>
+    <div>
+        <h2>Je suis une div qui contient un h2 et un tableau (les cases Cours, TP et Repos deviennent verte au passage
+            de la souris) </h2>
+        <center>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Journée</th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Matin</th>
+                        <td>Cours</td>
+                        <td>Cours</td>
+                        <td rowspan="2">TP</td>
+                        <td>Cours</td>
+                        <td>Cours</td>
+                        <td colspan="2" rowspan="2">Repos</td>
+                    </tr>
+                    <tr>
+                        <th>Après-midi</th>
+                        <td>TP</td>
+                        <td>TP</td>
+                        <td>TP</td>
+                        <td>TP</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="8">tableau non définitife</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <!-- Dans un tableau, on peux diviser les élement comme dans une page HTML; thead est la 1er colonne du tableau, tfoot la dernière, et tbody le reste. -->
+            <p>Emploi du temps</p>
+        </center>
+    </div>
+    <div>
+        <h2>Je suis une div qui contient un h2, une liste non ordonée et une liste ordonnée</h2>
+        <ul>
+            <li>Element 01</li>
+            <li>Element 02</li>
+            <li>Element 03</li>
+        </ul>
+        <ol>
+            <li>Element 01</li>
+            <li>Element 02</li>
+            <li>Element 03</li>
+        </ol>
+    </div>
+    <div class="bleu">
+        <h2>Je suis une div qui contient un h2 et un paragraphe</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sint ipsam fugiat eius eos illum id cumque, quo
+            velit saepe tempora harum blanditiis sunt eaque molestiae, culpa veritatis distinctio nihil.</p>
+    </div>
+
+    <div>
+        <h2>Je suis une div qui contient des span (utilisez la pseudo-classe CSS nth-of-type)</h2>
+        <p>
+            <span>Span 01</span>
+            <span>Span 02</span>
+            <span>Span 03</span>
+            <span>Span 04</span>
+            <span>Span 05</span>
+            <span>Span 06</span>
+            <!-- span ne fait rien au niveau visuelle, il sert juste de decouper/metre en groupe des éléments, je m'en sert ici pour espacer les span et de leurs appliquer un style diférent (dans le CSS) -->
+        </p>
+    </div>
+    Timo V. ©
+</body>
+
+</html>

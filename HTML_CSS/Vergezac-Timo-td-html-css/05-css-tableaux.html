@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/05-tableaux.css">
+    <!-- link permet de connecter plusieur ce fichier HTML à un autre fichier, ici je le connect à mon fichier CSS qui vas changer le style graphique -->
+    <!-- j'indique la route vers le fichier voulue dans href="" -->
+    <title>Tableaux CSS</title>
+</head>
+
+<body>
+    <h1>Les tableaux en HTML et CSS</h1>
+    <center>
+        <!-- center met au milieux tout les element à l'interieurre -->
+        <table border="1">
+            <!-- table permet de crée un tableau -->
+            <caption> Emploi du temps</caption>
+            <!-- caption ajoute un titre au tableau -->
+            <tr>
+                <!-- tr permert de crée un lignes et td permet de crée des colonnes-->
+                <th>Journée</th>
+                <!-- th est une colonnes ou le text sera en gras -->
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+                <th>Samedi</th>
+                <th>Dimanche</th>
+            </tr>
+            <tr>
+                <th>Matin</th>
+                <td>Cours</td>
+                <td>Cours</td>
+                <td rowspan="2">TP</td>
+                <td>Cours</td>
+                <td>Cours</td>
+                <td colspan="2" rowspan="2">Repos</td>
+                <!-- colspan et rowspan permettent de fusioner des cellules du tableau. colspan indique le nombre colonnes qu'occupe la cellule et rowspan le nombre de lignes -->
+            </tr>
+            <tr>
+                <th>Après-midi</th>
+                <td>TP</td>
+                <td>TP</td>
+                <td>TP</td>
+                <td>TP</td>
+            </tr>
+            <th>
+            <td colspan="8">tableau non définitife</td>
+            </th>
+        </table>
+    </center>
+    <br>
+    Timo V. ©
+</body>
+
+</html>

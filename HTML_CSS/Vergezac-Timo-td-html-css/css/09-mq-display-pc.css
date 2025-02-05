@@ -1,0 +1,44 @@
+/*--------------------------------ORDINATEUR--------------------------------*/
+@media screen and (min-width : 1025px) {
+    main {
+        width: 95%;
+        min-height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    div {
+        width: 24%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 24%;
+        width: 100%;
+    }   
+
+    div:nth-child(5) {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    /* Mettre un display block sur un élément inline permet de jouer sur sa taille */
+    span {
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 50%;
+        display: block;
+        font-size: 48px;
+        height: auto;
+        line-height: 3em;
+        text-align: center;
+        width: 3em;
+    }
+}
+

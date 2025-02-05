@@ -1,0 +1,66 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
+    margin: auto;
+}
+
+header {
+    background-color: red;
+    width: 100%;
+    height: 150px; 
+}
+
+nav {
+    background-color: yellow;
+    width: 90%;
+    height: 100px;
+}
+
+main {
+    background-color: blue;
+    width: 100%;
+    height: 430px;
+    position: relative;
+}
+
+article {
+    background-color: pink;
+    width: 80%;
+    height: 381px;
+}
+
+section {
+    background-color: orange;
+    height: 300px;
+}
+
+figure {
+    background-color: rgb(19, 199, 165);
+    width: 243px;
+    height: 317px;
+    margin-left: 2%;
+}
+
+aside {
+    background-color: black;
+    width: 243px;
+    height: 400px;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: green;
+    width: 100%;
+    height: 400px;
+}
+
+.textblanc {
+    color: white;
+}

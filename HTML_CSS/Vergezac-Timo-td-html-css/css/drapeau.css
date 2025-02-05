@@ -1,0 +1,47 @@
+.vert {
+    background-color: green;
+    height: 1000px;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.Lune {
+    border-radius:50%;
+    background-color: red;
+    height: 500px;
+    width: 500px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.trans {
+    border-radius:50%;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    z-index: 3;
+    position: absolute;
+    transform: translateX(30%) translateY(-50%);
+    top: 50%;
+}
+
+.star {
+    clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+   height: 250px;
+   width: 250px;
+   background-color: red;
+   position: absolute;
+   z-index: 4;
+   top: 50%;
+   left: 100px;
+   transform: translateY(-50%) rotate(10deg);
+}

@@ -1,0 +1,156 @@
+ul {
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+tr, td {
+    padding: 60px;
+    border: 2px solid green;
+    background-color: white;
+}
+
+table:hover tr:nth-child(1) td:nth-child(1),
+table:hover tr:nth-child(4) td:nth-child(1),
+table:hover tr:nth-child(4) td:nth-child(3) {
+    background-color: red;
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
+
+table:hover tr:nth-child(1) td:nth-child(2),
+table:hover tr:nth-child(2) td:nth-child(2),
+table:hover tr:nth-child(3) td:nth-child(2) {
+    background-color: green;
+    transition-delay: 2s;
+    transition-duration: 1s;
+}
+
+table:hover tr:nth-child(1) td:nth-child(3),
+table:hover tr:nth-child(2) td:nth-child(1),
+table:hover tr:nth-child(3) td:nth-child(1),
+table:hover tr:nth-child(4) td:nth-child(2) {
+    background-color: magenta;
+    transition-delay: 3s;
+    transition-duration: 1s;
+}
+
+.BarreRouge {
+    background-color: red;
+    width: 700px;
+    height: 70px;
+    margin: 20px;
+}
+
+.CarreBleu {
+    background-color: blue;
+    width: 70px;
+    height: 70px;
+}
+
+@keyframes DroiteGauche{
+    0% {
+        margin-left: 0px;
+    }
+
+    50%{
+        margin-left: 630px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+.BarreRouge:hover .CarreBleu {
+    margin-left: 630px;
+    animation-name: DroiteGauche;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.GrandCarre {
+    background-color: red;
+    height: 600px;
+    width: 600px;
+    margin: 20px;
+    position: relative;
+}
+
+.Forme {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    position: absolute;
+}
+
+@keyframes TahLesFoux {
+    0% {
+        background-color: yellow;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 0);
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    25%{
+        background-color: blue;
+        clip-path: polygon(0 0, 100% 0%, 100% 50%, 50% 100%, 0 50%);
+        margin-top: 450px;
+        margin-left: 0px;
+    }
+
+    50% {
+        background-color: green;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        margin-top: 450px;
+        margin-left: 450px;
+    }
+
+    75% {
+        background-color: black;
+        clip-path: polygon(0 50%, 50% 0, 100% 50%, 100% 100%, 0% 100%);
+        margin-top: 0px;
+        margin-left: 450px;
+    }
+
+    100% {
+        background-color: yellow;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 0);
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+.GrandCarre:hover .Forme {
+    animation-name: TahLesFoux;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.invisible {
+    margin: 20px;
+    width: 100%;
+    height: 600px;
+}
+
+img {
+    width: 40%;
+}
+
+.cacher {
+    visibility: hidden;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.invisible:hover .cacher {
+    visibility: visible;
+}

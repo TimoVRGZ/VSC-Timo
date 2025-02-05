@@ -1,0 +1,108 @@
+@media screen and (min-width : 1025px) {
+    ul {
+        list-style: none;
+        text-align: center;
+        width: auto;
+        padding: 0px;
+        color: white;
+    }
+
+    li:nth-child(1) {
+        display: grid;
+        background-color: rgb(10, 10, 100);
+
+    }
+
+    li {
+        background-color: rgb(124, 124, 170);
+        display: none;
+        height: 50px;
+        line-height: 3em;
+
+    }
+
+    ul:hover li {
+        display: grid;
+
+    }
+
+    li:hover {
+        background-color: rgb(10, 10, 100);
+        ;
+    }
+
+    .Menues {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-row: 1fr;
+        gap: 20px;
+    }
+
+    input {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width : 1024px) {
+    ul {
+        list-style: none;
+        text-align: center;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+        color: white;
+        display: grid;
+        justify-content: left;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    li:nth-child(1) {
+        display: grid;
+        background-color: rgb(10, 10, 100);
+
+    }
+
+    li {
+        background-color: rgb(124, 124, 170);
+        display: none;
+        height: 50px;
+        line-height: 3em;
+        margin: 0px;
+        width: 100%;
+
+    }
+
+    ul:hover li {
+        display: grid;
+
+    }
+
+    li:hover {
+        background-color: rgb(10, 10, 100);
+        ;
+    }
+
+    .Menues {
+        display: grid;
+        justify-content: left;
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        display: block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        height: 50px;
+        width: 50px;
+        background: white;
+        border: 1px solid #ccc;
+    }
+
+    input:checked + .Menues {
+        
+    }
+}

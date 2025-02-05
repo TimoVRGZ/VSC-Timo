@@ -1,0 +1,20 @@
+table {
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/* applique un style à tout les tableaux; cellules fixes, largeure de 80% de la page, modèle de bordure "collapse", bordure de 1pixel de couleur noire, text aligner au milieux */
+
+th,
+td {
+  padding: 10px; 
+}
+/* style pour les collones de tableau; taille de valeure interieure de 10pixel */
+
+th {
+  background-color: rgba(187, 187, 187, 0.603);
+}
+/* style pour collones de tableau en gras; couleure de la celule grise */
