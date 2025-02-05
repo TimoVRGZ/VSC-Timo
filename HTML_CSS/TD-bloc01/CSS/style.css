@@ -1,0 +1,90 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+main {
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Positionner le logo en haut à gauche avec un fond bleu */
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#logo img {
+    width: 40px;
+    filter: brightness(0) invert(1); /* Icône blanche */
+}
+
+
+/* Champ de saisie */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Bouton */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Séparateur sous le bouton */
+#Resultat::before {
+    content: "";
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    border-top: 3px solid #007BFF;
+}
+
+/* Résultat avec animation */
+#Resultat {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#Resultat.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style des lignes de la pyramide */
+#Resultat p {
+    margin: 0px;
+}
