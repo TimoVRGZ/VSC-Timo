@@ -1,6 +1,7 @@
 /* Général */
 body {
-    background-image: src(img/ciel)
+    background-image: url("../img/ciel2.webp");
+    background-size: cover;
     color: #333;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -10,9 +11,8 @@ body {
 
 /* Header */
 header {
-    background-color: #ffffff;
+    background: #ffffff81;
     padding: 20px;
-    border-bottom: 1px solid #e5e7eb;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,11 +42,11 @@ main {
     padding: 20px;
     justify-content: space-evenly;
     gap: 20px;
+
 }
 
-/* Publicité */
 .Pub {
-    background: linear-gradient(135deg, #ffffff, #f9fafb);
+    background: #ffffff81;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -58,6 +58,7 @@ main {
     align-items: center;
     gap: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 500px;
 }
 
 .Pub:hover {
@@ -88,7 +89,7 @@ main {
     color: #ffffff;
 }
 
-.Pub img:nth-child(3) {
+.Pub .pp {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -99,9 +100,9 @@ main {
 .louvre{
     height: 200px;
 }
-/* Weather App */
+
 .weather-app {
-    background: #ffffff;
+    background: #ffffff81;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -110,15 +111,14 @@ main {
     text-align: center;
 }
 
-/* Formulaire */
 .weather-app p {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: #6b7280;
+    color: #000000;
 }
 
 input[list="ville"] {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #d1d5db;
@@ -149,7 +149,6 @@ button#searchButton:hover {
     transform: scale(1.05);
 }
 
-/* Résultats météo */
 #weather-result {
     margin: 20px 0;
     font-size: 1.1rem;
@@ -157,7 +156,6 @@ button#searchButton:hover {
     color: #374151;
 }
 
-/* Stats */
 .Stats {
     display: flex;
     flex-direction: row;
@@ -211,7 +209,6 @@ div img {
     margin-top: 15px;
 }
 
-/* Température */
 .Temperature img {
     height: 90px;
     margin-top: 10px;
