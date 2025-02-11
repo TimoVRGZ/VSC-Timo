@@ -25,15 +25,15 @@ bouton.addEventListener("click", () => {
         
         // Génération de la pyramide
         for (let i = 0; i < nbEtages; i++) {
-            let nbEspaces = nbEtages - i;
+            let nbEspaces = nbEtages - i + 1;
             let nbEtoiles = i + 1;
             let ligne = '-'.repeat(nbEspaces) + ' * '.repeat(nbEtoiles) + '-'.repeat(nbEspaces);
+            ligne = ligne.slice(1, -1) //garde tout saufe le 1er et le dernier "_"
 
             let Paragraphe = document.createElement("p");
             Paragraphe.textContent = ligne;
             Resultat.appendChild(Paragraphe);
         }
-
         // Ajoute la classe "show" pour afficher avec animation
         Resultat.classList.add("show");
     }

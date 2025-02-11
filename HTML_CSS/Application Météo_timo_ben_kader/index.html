@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Météo France</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo_TOV_meteo.png" alt="">
+        <h1>Weather Report</h1>
+    </header>
+    <main>
+        <div class="Pub">
+            <a href="https://parisjetaime.com/" target="_blank"> Office du Tourisme</a>
+            <img src="img/Louvre.jpg"  alt="louvre" class="louvre" >
+        </div>
+        <div class="weather-app">
+
+            <p>Entrez une ville pour obtenir les informations météo :</p>
+
+            <input list="ville" id="city" name="city">
+            <datalist id="ville">
+                <option value="Paris"></option>
+                <option value="Marseille"></option>
+                <option value="Lyon"></option>
+                <option value="Toulouse"></option>
+                <option value="Nice"></option>
+                <option value="Nantes"></option>
+                <option value="Strasbourg"></option>
+                <option value="Montpellier"></option>
+                <option value="Bordeaux"></option>
+                <option value="Lille"></option>
+                <option value="Rennes"></option>
+                <option value="Reims"></option>
+                <option value="Le Havre"></option>
+                <option value="Saint-Étienne"></option>
+                <option value="Toulon"></option>
+                <option value="Grenoble"></option>
+                <option value="Dijon"></option>
+                <option value="Angers"></option>
+                <option value="Nîmes"></option>
+                <option value="Villeurbanne"></option>
+                <option value="Clermont-Ferrand"></option>
+                <option value="Le Mans"></option>
+                <option value="Aix-en-Provence"></option>
+                <option value="Brest"></option>
+                <option value="Limoges"></option>
+                <option value="Tours"></option>
+                <option value="Amiens"></option>
+                <option value="Metz"></option>
+                <option value="Perpignan"></option>
+                <option value="Besançon"></option>
+                <option value="Orléans"></option>
+                <option value="Rouen"></option>
+                <option value="Mulhouse"></option>
+                <option value="Caen"></option>
+                <option value="Boulogne-Billancourt"></option>
+                <option value="Nancy"></option>
+                <option value="Argenteuil"></option>
+                <option value="Saint-Denis"></option>
+                <option value="Montreuil"></option>
+                <option value="Roubaix"></option>
+                <option value="Dunkerque"></option>
+            </datalist>
+
+            <button id="searchButton" onclick="inputville()">Rechercher</button>
+            <div id="weather-result">
+                <p id="resultat"></p>
+            </div>
+            <div class="Stats">
+                <div class="Temperature">
+                    <p>Temperature :</p>
+                    <h1 id="AffichageTemperature">-C°</h1>
+                    <img id="iconemeteo" src="" alt="">
+                </div>
+                <div class="humidite">
+                    <p>Humidité :</p>
+                    <h1 id="AffichageHumidite">-%</h1>
+                    <img src="img/iconhumidity.webp" alt="icone humidité">
+                </div>
+                <div class="Vent">
+                    <p>Vitesse du Vent :</p>
+                    <h1 id="AffichageVent">-m/s</h1>
+                    <img src="img/iconewind.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="Pub">
+            <a href="https://www.twitch.tv/sh4mse" target="_blank">Twitch Sh4mse</a>
+            <img src="img/pp_kader.png" alt="pp kader" class="pp">
+            <br>
+
+        </div>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

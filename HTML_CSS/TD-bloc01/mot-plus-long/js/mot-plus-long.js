@@ -8,7 +8,8 @@ const Resultat = document.getElementById("Resultat") // div contenant les result
 
 //l'event a pour bute d'afficher dans le paragraphe le/les mot(s) le(s) plus long de la phrase entré dans l'input :
 bouton.addEventListener("click", () => { //execute le code qui suit quand la valeur de l'input change (quand on apuis sur enter)
-    let mots = input.value.split(/[\s,.!?;:]+/); // Séparer les mots de la phrase en les met dans un Array[] apeler "mots", suprime egalement la ponctuation (espace, virgule, point...)
+    let mots = input.value.replace(/[?.,!;:()]/g, " "); //Remplace toutes les poncutaion par des espace
+    mots = mots.split(" "); // Séparer les mots de la phrase en les met dans un Array[] apeler "mots"
 
     let taille_mot_plus_long = 0; // crée la varialbe ou remet la taille du plus grand mot à 0 (car si non in garde les valeurs de l'ancienne phrase)
     let mots_plus_longs = [];   // créeation/réinisialisation de la variable. La variable est un Array[] (une liste de valeure ex: [pomme, 12, bonjour])
